@@ -60,8 +60,6 @@ overflow: scroll;
   }
 .textdomu{
    color: #000000;
-   background-color: #00ff15;
-  
 }
 body,
 html {
@@ -93,6 +91,11 @@ section {
     drop-shadow(1px -1px 0 black) 
     drop-shadow(-1px 1px 0 black);
     text-shadow: 8px 3px 15px #000000;
+
+}
+.background-image{
+  width: 1200px;
+  height: 650px;
 }
 
 .title {
@@ -118,6 +121,7 @@ section {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            background-color: #134deb;
         }
 
         .square {
@@ -148,8 +152,5 @@ section {
             color: inherit;
         }
        
-.background-image {
-  .background-image 
-    height: auto;
-    padding-bottom: 50px;
-}
+
+    
