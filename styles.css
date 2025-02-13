@@ -22,7 +22,7 @@
 body {
     font-family: serif;
 
-background-color: rgb(250, 250, 250);
+background-color: rgb(207, 243, 247);
 overflow: scroll;
 }
 
@@ -31,7 +31,7 @@ overflow: scroll;
       a {
         display: block;
         padding: 16px;
-        background-color: #0030b4;
+
       }
 }   ul {
     list-style-type: none;
@@ -39,7 +39,7 @@ overflow: scroll;
     padding: 0;
     overflow: hidden;
     background-color: #004ca3;
-    border-radius: 10px;
+
   }
   
   li {
@@ -60,6 +60,8 @@ overflow: scroll;
   }
 .textdomu{
    color: #000000;
+
+   border-radius: 10px;
 }
 body,
 html {
@@ -91,11 +93,6 @@ section {
     drop-shadow(1px -1px 0 black) 
     drop-shadow(-1px 1px 0 black);
     text-shadow: 8px 3px 15px #000000;
-
-}
-.background-image{
-  width: 1200px;
-  height: 650px;
 }
 
 .title {
@@ -121,7 +118,6 @@ section {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            background-color: #134deb;
         }
 
         .square {
@@ -152,5 +148,15 @@ section {
             color: inherit;
         }
        
+.background-image {
+  .background-image 
+    height: .col-9;
+    padding-bottom: 50px;
+}
 
-    
+footer {
+
+  padding-left: 50px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}
