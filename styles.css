@@ -147,16 +147,25 @@ section {
             text-decoration: none;
             color: inherit;
         }
-       
-.background-image {
-  .background-image 
-    height: .col-9;
-    padding-bottom: 50px;
-}
 
 footer {
 
   padding-left: 50px;
   border-radius: 10px;
   color: rgb(0, 0, 0);
+}
+
+.container {
+  text-align: center;
+  padding: 90px;
+  width: 1000px;
+}
+footer {
+  background-color: #004ca3;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+footer p {
+  margin: 5px 0;
 }
