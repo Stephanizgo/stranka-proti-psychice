@@ -27,12 +27,11 @@ overflow: scroll;
 }
 
 .zahlavi {
-      
-      a {
         display: block;
         padding: 16px;
-
-      }
+        position: fixed;
+        background-color: #004ca3;
+      
 }   ul {
     list-style-type: none;
     margin: 0;
@@ -56,7 +55,7 @@ overflow: scroll;
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #9f294c;
+    background-color: #000000;
   }
 .textdomu{
    color: #000000;
@@ -175,3 +174,34 @@ footer p {
 .bob{
  background-color: rgb(207, 243, 247);
 }
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  position: absolute;
+  left: -250px; /* Začíná mimo obrazovku */
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 1s ease-in-out;
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nadpis{
+
+}
+
+
+
