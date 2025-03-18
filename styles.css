@@ -199,9 +199,24 @@ footer p {
   opacity: 1;
   transform: translateY(0);
 }
-.nadpis{
 
+
+.odstavec {
+  text-align: center;
+  background-color: #004ca3; /* Modré pozadí */
+  color: white; /* Bílý text pro lepší čitelnost */
+  padding: 20px;
+  max-width: 800px; /* Užší šířka pro lepší čitelnost */
+  border-radius: 10px; /* Zaoblené rohy */
+  margin: 20px auto; /* Vycentrování na střed */
 }
 
+.odstavec p {
+  margin-bottom: 15px; /* Mezera mezi odstavci */
+  padding: 10px;
+  background-color: white; /* Bílé boxy kolem textu */
+  color: black; /* Černý text pro kontrast */
+  border-radius: 5px; /* Zaoblené rohy u boxů */
+}
 
 
