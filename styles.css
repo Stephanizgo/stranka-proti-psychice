@@ -80,18 +80,20 @@ section {
 
 /* Styly pro nadpis */
 .text-overlay {
-    background-color: #f0f0f000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Change this to your preferred text color */
-    font-size: 50px; /* Adjust the font size as needed */
-    filter: drop-shadow(1px 1px 0 black) 
-    drop-shadow(-1px -1px 0 black) 
-    drop-shadow(1px -1px 0 black) 
+  background-color: #f0f0f000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Change this to your preferred text color */
+  font-size: 50px; /* Adjust the font size as needed */
+  filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black)
+    drop-shadow(1px -1px 0 black)
     drop-shadow(-1px 1px 0 black);
-    text-shadow: 8px 3px 15px #000000;
+  text-shadow: 8px 3px 15px #000000;
+  text-align: center;
+  z-index: 2;  /* Ensure the text is above the photo */
 }
 
 .title {
@@ -219,4 +221,30 @@ footer p {
   border-radius: 5px; /* Zaoblené rohy u boxů */
 }
 
+.ml6 {
+  position: relative;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.photo {
+  position: relative;   /* Ensure the photo is positioned so the overlay can go on top */
+  width: 100%;          /* Or set specific width and height as required */
+  height: auto;         /* Or a fixed height if needed */
+  z-index: 1;           /* Ensure the image stays below the text */
+}
 
