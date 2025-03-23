@@ -18,18 +18,7 @@
    }
  });
 
- // Animation for the sliding text
- gsap.from(".sliding-text", {
-   y: 50,
-   opacity: 0,
-   duration: 1,
-   ease: "easeOutExpo",
-   scrollTrigger: {
-     trigger: ".sliding-text",
-     start: "top 80%", // Trigger when 80% of the text section is in view
-     once: true,  // Only trigger once
-   }
- });
+
 
  // Animation for ML6 letters
  gsap.from(".ml6 .letter", {
@@ -41,6 +30,18 @@
    scrollTrigger: {
      trigger: ".ml6",
      start: "top 80%", // Trigger when the element is 80% visible
+     once: true,  // Only trigger once
+   }
+ });
+  // Animation for the sliding text
+ gsap.from(".sliding-text", {
+   y: 50,
+   opacity: 0,
+   duration: 1,
+   ease: "easeOutExpo",
+   scrollTrigger: {
+     trigger: ".sliding-text",
+     start: "top 80%", // Trigger when 80% of the text section is in view
      once: true,  // Only trigger once
    }
  });
@@ -65,9 +66,9 @@
 
  // Animation for the text overlay sliding up on page load
  gsap.from(".text-overlay", {
-   y: 100,  // Move the text overlay from below
-   opacity: 0,
-   duration: 1.5,
-   ease: "easeOutExpo",
-   delay: 0.5,
- });
+  y: 50,
+  opacity: 0,
+  duration: 0.4,
+  ease: "power2.out",
+  delay: 0.3,
+});
