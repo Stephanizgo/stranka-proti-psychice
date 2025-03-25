@@ -12,17 +12,95 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 50px;
+  }
+
+  .square {
+    width: 120px;
+    height: 120px;
+  }
+
+  .odstavec {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .imagekr {
+    width: 600px;
+  }
+}
+
+/* Pro mobilní zařízení */
+@media screen and (max-width: 768px) {
+  .zahlavi {
+    text-align: center;
+    position: static;
+    padding: 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  li {
+    float: none;
     width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .square {
+    width: 100px;
+    height: 100px;
+  }
+
+  .text-overlay {
+    font-size: 30px;
+  }
+
+  .imagekr {
+    width: 400px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-overlay {
+    font-size: 24px;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+  }
+
+  .imagekr {
+    width: 300px;
   }
 }
 
 body {
     font-family: serif;
 
-background-color: rgb(207, 243, 247);
+background-color: rgb(175, 213, 241);
 
 }
 
@@ -277,4 +355,7 @@ footer p {
 }
 .color{
   background-color: white;
+}
+.imagekr{
+  width: 800px;
 }
