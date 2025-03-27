@@ -75,3 +75,9 @@ gsap.from(".footer", {
 
 // Animation for the text overlay sliding up on page load
 gsap
+
+// Toggle the navigation menu on mobile
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
