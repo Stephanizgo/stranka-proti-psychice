@@ -73,11 +73,18 @@ gsap.from(".footer", {
    }
 });
 
+
+gsap.from(".zahlavi", {
+  y: 100,  // Move the footer from below
+  opacity: 0,
+  duration: 0.6,  // Faster duration
+  ease: "easeOutExpo",
+  delay: 0.2,
+  scrollTrigger: {
+    trigger: ".zahlavi",  // Make sure the footer triggers the animation
+    start: "top 100%", // Trigger when the footer enters the viewport
+    once: true,  // Only trigger once
+  }
+});
 // Animation for the text overlay sliding up on page load
 gsap
-
-// Toggle the navigation menu on mobile
-function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('active');
-}
